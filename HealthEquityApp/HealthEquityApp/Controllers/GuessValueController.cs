@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using HealthEquityApp.Dal;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -10,12 +6,12 @@ using HealthEquityApp.Dal;
 namespace HealthEquityApp.Controllers
 {
     [Route("api/[controller]")]
-    public class GuessValue : ControllerBase
+    public class GuessValueController : ControllerBase
     {
 
         private readonly ICarService _carService;
 
-        public GuessValue(ICarService carService)
+        public GuessValueController(ICarService carService)
         {
             _carService = carService;
         }
@@ -28,8 +24,6 @@ namespace HealthEquityApp.Controllers
             var guessResult = await _carService.GuessPriceWithin5000RangeAsync(carId, guessValue);
             return new OkObjectResult(guessResult);
         }
-
-
     }
 }
 
