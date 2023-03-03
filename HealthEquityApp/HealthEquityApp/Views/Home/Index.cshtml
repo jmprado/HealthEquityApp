@@ -1,0 +1,113 @@
+﻿@model IEnumerable<HealthEquityApp.Model.Car>
+
+@{
+    ViewData["Title"] = "HealthEquityApp - Home Page";
+}
+
+@if (Model != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Id
+                </th>
+                <th>
+                    Make
+                </th>
+                <th>
+                    Model
+                </th>
+                <th>
+                    Year
+                </th>
+                <th>
+                    Doors
+                </th>
+                <th>
+                    Color
+                </th>
+                <th>
+                    Price
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var car in Model)
+            {
+                <tr>
+                    <td>
+                        @car.Id
+                    </td>
+                    <td id="carmake_@car.Id">
+                        @car.Make
+                    </td>
+                    <td id="carmodel_@car.Id">
+                        @car.Model
+                    </td>
+                    <td id="caryear_@car.Id">
+                        @car.Year
+                    </td>
+                    <td>
+                        @car.Doors
+                    </td>
+                    <td class="text-center">
+                        @car.Color
+                    </td>
+                    <td>
+                        <label for="input_@car.Id">
+                            Try to guess the car price:
+                        </label>
+                        <input type="number" id="input_@car.Id" maxlength="9" />
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn_guess" id="btn_@car.Id">Guess</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+<div class="modal" tabindex="-1" id="modal_success">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h3 class="text-success">Good job.</h3>
+                <p>Your guess value of <strong class="guess-value"></strong> is within range.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" id="modal_fail">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h3 class="text-danger">Ops, not this time.</h3>
+                <p>Change the guess value of <strong class="guess-value"></strong> and try again.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
