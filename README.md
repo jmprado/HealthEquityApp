@@ -1,5 +1,5 @@
-# HealthQualityApp
-## This project is part of selection process for a position in Health Equity account at Taller Technologies
+# Health Equity App
+## This project is part of selection process for a position in Health Equity account through Taller Technologies
 
 **Contents**
 
@@ -7,7 +7,7 @@ Folder: SQL Test
 - init_databse.sql -> Script SQL for create tables and init test data
 - OrdersQuery -> Query requested in the instructions file "COBRA refresh coding exercises.pptx"
 
-Folder HealthQualityApp
+Folder HealthEquityApp
 - App with all the features requested in the instructions file "COBRA refresh coding exercises.pptx"
 
 
