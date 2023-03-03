@@ -1,7 +1,8 @@
 -- REQUESTED QUERY USING T-SQL
 SELECT 
 	(c.FirstName + ' ' + c.LastName) AS 'Full Name', 
-	c.Age, o.OrderId, 
+	c.Age, 
+	o.OrderId, 
 	o.DateCreated, 
 	o.MethodOfPurchase AS 'Purchase Method',
 	od.ProductNumber, 
