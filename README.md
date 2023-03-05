@@ -8,6 +8,7 @@ Folder: [SQL Test](https://github.com/jmprado/HealthEquityApp/tree/master/SQL%20
 - [OrdersQuery](https://github.com/jmprado/HealthEquityApp/blob/master/SQL%20Test/OrdersQuery.sql) - Query requested in the file "COBRA refresh coding exercises.pptx"
 
 Folder: [HealthEquityApp](https://github.com/jmprado/HealthEquityApp/tree/master/HealthEquityApp)
+
 ***Tech stack: .Net Core 7.0, Bootstrap 5.1, Jquery 3.6***
 - [HealthEquityApp](https://github.com/jmprado/HealthEquityApp/tree/master/HealthEquityApp/HealthEquityApp) - ASP.Net MVC type project with the HTML/CSS/Js with the features requested in the file "COBRA refresh coding exercises.pptx"
 - [HealthEquityApp.Model](https://github.com/jmprado/HealthEquityApp/tree/master/HealthEquityApp/HealthEquityApp.Model) - Class library with the Car model
