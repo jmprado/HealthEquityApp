@@ -7,7 +7,7 @@ Folder: [SQL Test](https://github.com/jmprado/HealthEquityApp/tree/master/SQL%20
 - [init_databse.sql](https://github.com/jmprado/HealthEquityApp/blob/master/SQL%20Test/init_database.sql) - Script SQL for create tables and init test data
 - [OrdersQuery](https://github.com/jmprado/HealthEquityApp/blob/master/SQL%20Test/OrdersQuery.sql) - Query requested in the file "COBRA refresh coding exercises.pptx"
 
-[HealthEquityApp](https://github.com/jmprado/HealthEquityApp/tree/master/HealthEquityApp) Content
+Folder: [HealthEquityApp](https://github.com/jmprado/HealthEquityApp/tree/master/HealthEquityApp)
 - [HealthEquityApp](https://github.com/jmprado/HealthEquityApp/tree/master/HealthEquityApp/HealthEquityApp) - ASP.Net MVC type project with the HTML/CSS/Js with the features requested in the file "COBRA refresh coding exercises.pptx"
 - [HealthEquityApp.Model](https://github.com/jmprado/HealthEquityApp/tree/master/HealthEquityApp/HealthEquityApp.Model) - Class library with the Car model
 - [HealthEquityApp.Dal](https://github.com/jmprado/HealthEquityApp/tree/master/HealthEquityApp/HealthEquityApp.Dal) - Class library with Data Access Layer with the CRUD operations requested
