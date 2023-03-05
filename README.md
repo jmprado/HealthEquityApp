@@ -13,7 +13,7 @@ Folder: [HealthEquityApp](https://github.com/jmprado/HealthEquityApp/tree/master
 - [HealthEquityApp.Dal](https://github.com/jmprado/HealthEquityApp/tree/master/HealthEquityApp/HealthEquityApp.Dal) - Class library with Data Access Layer with the CRUD operations requested
 - [HealthEquityApp.Tests](https://github.com/jmprado/HealthEquityApp/tree/master/HealthEquityApp/HealthEquityApp.Tests) - Test project with test for the guessing operations
 
-Javascript Operations
+Javascript/JQuery Operations
 - The frontend guess API call and DOM manipulation code is in the file [site.js](https://github.com/jmprado/HealthEquityApp/blob/master/HealthEquityApp/HealthEquityApp/wwwroot/js/site.js)
 
 
