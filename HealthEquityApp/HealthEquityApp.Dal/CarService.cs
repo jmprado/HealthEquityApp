@@ -76,7 +76,7 @@ namespace HealthEquityApp.Dal
         {
             var car = await GetAsync(carId);
             if (car != null)
-                return GuessTest.IsBetween(guessValue, car.Price - 5000, car.Price + 5000);
+                return GuessOperation.ValueIsInRange(guessValue, car.Price - 5000, car.Price + 5000);
 
             return false;
         }
