@@ -14,7 +14,7 @@ Folder: [HealthEquityApp](https://github.com/jmprado/HealthEquityApp/tree/master
 - [HealthEquityApp.Tests](https://github.com/jmprado/HealthEquityApp/tree/master/HealthEquityApp/HealthEquityApp.Tests) - Test project with test for the guessing operations
 
 Javascript/JQuery Operations
-- The frontend guess API call and DOM manipulation code is in the file [site.js](https://github.com/jmprado/HealthEquityApp/blob/master/HealthEquityApp/HealthEquityApp/wwwroot/js/site.js)
+- The frontend guess API call and DOM manipulation code are in the file [site.js](https://github.com/jmprado/HealthEquityApp/blob/master/HealthEquityApp/HealthEquityApp/wwwroot/js/site.js)
 
 
 **What is missing**
