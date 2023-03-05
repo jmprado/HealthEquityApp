@@ -4,7 +4,7 @@
 **Contents**
 
 Folder: [SQL Test](https://github.com/jmprado/HealthEquityApp/tree/master/SQL%20Test)
-- [init_databse.sql](https://github.com/jmprado/HealthEquityApp/blob/master/SQL%20Test/init_database.sql) - Script SQL for create tables and init test data
+- [init_databse.sql](https://github.com/jmprado/HealthEquityApp/blob/master/SQL%20Test/init_database.sql) - Script TSQL for create tables and init test data
 - [OrdersQuery](https://github.com/jmprado/HealthEquityApp/blob/master/SQL%20Test/OrdersQuery.sql) - Query requested in the file "COBRA refresh coding exercises.pptx"
 
 Folder: [HealthEquityApp](https://github.com/jmprado/HealthEquityApp/tree/master/HealthEquityApp)
