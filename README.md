@@ -11,7 +11,7 @@ Folder HealthEquityApp
 - App with all the features requested in the instructions file "COBRA refresh coding exercises.pptx"
 
 Javascript Operations
-- The frontend guess API call and DOM manipulation code is in the file HealthEquityApp/HealthEquityApp/wwwroot/js/site.js
+- The frontend guess API call and DOM manipulation code is in the file [site.js](https://github.com/jmprado/HealthEquityApp/blob/master/HealthEquityApp/HealthEquityApp/wwwroot/js/site.js)
 
 
 **What is missing**
