@@ -1,6 +1,8 @@
 # Health Equity App
 ## This project is part of selection process for a position in Health Equity through Taller Technologies
 
+***Tech stack: .Net Core 7.0, Bootstrap 5.1, Jquery 3.6***
+
 **Contents**
 
 Folder: [SQL Test](https://github.com/jmprado/HealthEquityApp/tree/master/SQL%20Test)
