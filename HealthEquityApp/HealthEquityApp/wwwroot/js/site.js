@@ -5,11 +5,8 @@ $(".btn_guess").on('click', function () {
 
     // Get car id and the value entered in the input tag
     const btnId = $(this).attr("id");
-    const carId = idBtn.replace("btn_", "");
-    const userGuessNumber = getGuessValue(carId);
-
-    // Clear the input value
-    $(idGuessInput).val('');
+    const carId = btnId.replace("btn_", "");
+    const guessValue = getGuessValue(carId);
 
     // Get car info
     const carInfo = getCarInfo(carId);
@@ -17,9 +14,9 @@ $(".btn_guess").on('click', function () {
 
     // Change the text in the modals
     $(".modal-title").text(modalTitle);
-    $(".guess-value").text(praseInt(userGuessNumber).toLocaleString());
+    $(".guess-value").text(formatGuessValue(guessValue));
 
-    if ($.trim(userGuessNumber) !== "") {
+    if ($.trim(guessValue) !== "") {
         const urlRequest = `${baseApiUrl}/${carId}/${guessValue}`;
 
         $.post(urlRequest, function (data) {
@@ -31,10 +28,15 @@ $(".btn_guess").on('click', function () {
     }
 });
 
-// Get the value entered in the input tag
+// Get the value entered in the input tag and then clear it
 function getGuessValue(carId) {    
     const idGuessInput = "#input_" + carId;
-    return $(idGuessInput).val();    
+    const guessValue = $(idGuessInput).val();
+
+    // Clear the input value
+    $(idGuessInput).val('');
+
+    return guessValue;   
 }
 
 function getCarInfo(carId) {
@@ -43,4 +45,8 @@ function getCarInfo(carId) {
     const carYear = $("#caryear_" + carId).text();
 
     return { "carMake": carMake, "carModel": carModel, "carYear": carYear };
+}
+
+function formatGuessValue(value) {
+    return `$${parseInt(value).toLocaleString()}`
 }
