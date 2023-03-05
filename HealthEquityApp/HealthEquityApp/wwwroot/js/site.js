@@ -8,6 +8,8 @@ $(".btn_guess").on('click', function () {
     const idGuessInput = "#input_" + carId;
     const guessValue = $(idGuessInput).val();
 
+    $(idGuessInput).val('');
+
     const carMake = $("#carmake_" + carId).text();
     const carModel = $("#carmodel_" + carId).text();
     const carYear = $("#caryear_" + carId).text();
@@ -15,7 +17,7 @@ $(".btn_guess").on('click', function () {
     const modalTitle = `${carMake} ${carModel} - Year ${carYear}`;
 
     $(".modal-title").text(modalTitle);
-    $(".guess-value").text(guessValue);
+    $(".guess-value").text(parseInt(guessValue).toLocaleString());
 
     if ($.trim(guessValue) !== "") {
         const urlRequest = `${baseApiUrl}/${carId}/${guessValue}`;

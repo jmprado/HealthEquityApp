@@ -8,10 +8,10 @@ namespace HealthEquityApp
         // Register dependency injection services
         public static void ConfigureServices(this IServiceCollection services)
         {
-            services.AddSingleton<ICarService, CarService>();
+            services.AddTransient<ICarService, CarService>();
         }
 
-        // Add test date to memory
+        // Add test data to in memory database
         public static async void InitInMemoryDatabase(IServiceProvider provider)
         {
             var carService = provider.GetService<ICarService>();
