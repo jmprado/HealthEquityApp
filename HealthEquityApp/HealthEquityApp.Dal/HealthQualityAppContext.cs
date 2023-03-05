@@ -17,6 +17,7 @@ namespace HealthEquityApp.Dal
 
         public DbSet<Car> Cars { get; set; }
 
+        // Setup in memory database
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
