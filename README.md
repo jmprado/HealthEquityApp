@@ -1,5 +1,5 @@
 # Health Equity App
-## This project is part of selection process for a position in Health Equity account through Taller Technologies
+## This project is part of selection process for a position in Health Equity through Taller Technologies
 
 **Contents**
 
@@ -9,6 +9,9 @@ Folder: SQL Test
 
 Folder HealthEquityApp
 - App with all the features requested in the instructions file "COBRA refresh coding exercises.pptx"
+
+Javascript Operations
+- The frontend guess API call and DOM manipulation code is in the file HealthEquityApp/HealthEquityApp/wwwroot/js/site.js
 
 
 **What is missing**
